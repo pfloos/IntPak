@@ -42,3 +42,7 @@ The options are gathered in `input/int` and it looks like this
 # Four-electron integrals: Type1 Type2 Type3
                            F     F     F
 ```
+The basis set is given in `input/basis` while the molecular geometry is given in `input/molecule`.
+A concrete example is given in the repository.
+
+Have fun!
