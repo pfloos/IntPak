@@ -44,5 +44,7 @@ The options are gathered in `input/int` and it looks like this
 ```
 The basis set is given in `input/basis` while the molecular geometry is given in `input/molecule`.
 A concrete example is given in the repository.
+Additional tuning can be done in the main source file `src/IntPak.f90`.
+
 
 Have fun!
