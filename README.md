@@ -2,7 +2,7 @@
 
 Simple and slow integral package for Gaussian basis functions.[^1][^2]
 IntPak has the ability to compute various types of one-, two-, three-, and four-electron integrals using various operators.[^3][^4][^5]
-IntPak is extremely slow but the implementation is straightforward
+IntPak is extremely slow but the implementation is straightforward.
 
 **Contributors:**
 - [Pierre-Francois Loos](https://pfloos.github.io/WEB_LOOS)
@@ -36,15 +36,27 @@ The options are gathered in `input/int` and it looks like this
 # Exposant of the Slater geminal
   1.0
 # One-electron integrals: Ov Kin Nuc
-                          F  F   F
+                          T  T   T
 # Two-electron integrals: ERI F12 Yuk Erf
-                          F   F   T   F
+                          T   F   F   F
 # Three-electron integrals: Type1 Type2 Type3
                             F     F     F
 # Four-electron integrals: Type1 Type2 Type3
                            F     F     F
 ```
+In this case, the usual one-electron integrals are going to be computed (overlap, kinetic and nuclear attraction) as well as the electron repulsion integrals (ERIs).
 The basis set is given in `input/basis` while the molecular geometry is given in `input/molecule`.
+
+The `molecule` file looks like this for N2 (the coordinates are given in bohr):
+
+```
+# nAt nEla nElb nCore nRyd
+    2    7    7     0    0
+# Znuc   x            y           z
+  N        0.0000000000         0.0000000000         1.0400863244
+  N        0.0000000000         0.0000000000        -1.0400863244
+```
+
 A concrete example is given in the repository.
 Additional tuning can be done in the main source file `src/IntPak.f90`.
 
