@@ -1,7 +1,7 @@
 # IntPak
 
 Simple and slow integral package for Gaussian basis functions.[^1][^2]
-IntPak has the ability to compute various types of one-, two-, three-, and four-electron integrals using various operators.[^3]
+IntPak has the ability to compute various types of one-, two-, three-, and four-electron integrals using various operators.[^3][^4][^5]
 IntPak is extremely slow but the implementation is straightforward
 
 **Contributors:**
