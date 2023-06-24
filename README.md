@@ -59,7 +59,7 @@ The `molecule` file looks like this for N2 (the coordinates are given in bohr):
 
 A concrete example is given in the repository.
 Additional tuning can be done in the main source file `src/IntPak.f90`.
-
+In particular, one can tune the coefficients and exponents of the Gaussian geminals that are used to fit the Slater geminal.
 
 Have fun!
 
