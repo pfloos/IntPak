@@ -46,7 +46,7 @@ The options are gathered in `input/int` and it looks like this
 # Four-electron integrals: Type1 Type2 Type3
                            F     F     F
 ```
-In this case, the usual one-electron integrals are going to be computed (overlap, kinetic and nuclear attraction) as well as the electron repulsion integrals (ERIs). Other two-electron integrals over the operator f12 (f12 being a Gaussian or Slater geminal), f12/r12, and erf(r12)/r12 can also be computed. For the three- and four-electron integrals, see [3][4][5].
+In this case, the usual one-electron integrals are going to be computed (overlap, kinetic and nuclear attraction) as well as the electron repulsion integrals (ERIs). Other two-electron integrals over the operator f12 (f12 being a Gaussian or Slater geminal), f12/r12, and erf(r12)/r12 can also be computed. For the three- and four-electron integrals, see the corresponding papers. [^3][^4][^5].
 The basis set is given in `input/basis` while the molecular geometry is given in `input/molecule`.
 
 The `molecule` file looks like this for N2 (the coordinates are given in bohr):
